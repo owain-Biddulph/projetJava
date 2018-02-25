@@ -1,0 +1,46 @@
+Resources : 
+	rooms  -  BoxRooms, ShockRooms, WaitingRooms
+	beds
+	examination facilities
+	stretchers
+	healthService - medical services
+	physicians
+	nurses
+	transporters
+
+
+players :
+	physicians
+	nurses
+	patients
+	maintenance
+	cleaners
+	admin
+	students
+	psychologists
+
+medical services :
+	x-rays
+	scans
+	electrocardiogram
+	echography
+	blood-test
+	consultation
+	MRI
+
+functionalities :
+	management of different patient categories (emergency lvl)
+	provision of medical services
+
+performance evaluation :
+	number of patients served per day
+	average waiting time of patients of a given category
+
+patients :
+	severity lvl
+	checked-in status
+	treatment stage
+
+Key Performace Indicators (KPI) :
+	Length-of-stay (LOS)
+	Door-to-doctor-time (DTDT)
