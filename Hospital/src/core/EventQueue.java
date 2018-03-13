@@ -2,9 +2,17 @@ package core;
 
 import java.util.*;
 
-//TODO we need to make this class a singleton
+//TODO we need to make this class a greedy singleton
 public class EventQueue {
 	
+	private EventQueue() {
+		super();
+	}
+	private static EventQueue instance  = new EventQueue();
+	
+	public static EventQueue getEventQueue() {
+		return(instance);
+	}
 	private class EventComparator implements Comparator<Event>{
 
 		@Override
@@ -17,10 +25,11 @@ public class EventQueue {
 			}
 			return 0;
 		}
-		
 	}
 	
-	private static PriorityQueue<Event> eventQueue = new PriorityQueue(1, new EventComparator());
+	private static EventComparator comparator = instance.new EventComparator();
+	
+	private static PriorityQueue<Event> eventQueue = new PriorityQueue(1, comparator);
 	
 	
 	
