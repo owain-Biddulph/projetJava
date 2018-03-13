@@ -1,6 +1,6 @@
 package core;
 
-public class TransportationToTest extends Event{
+public class TransportationToExamination extends Event{
 	private Room startRoom;
 	private Room endRoom;
 	private Equipment equipment;
@@ -13,15 +13,21 @@ public class TransportationToTest extends Event{
 		this.equipment = equipment;
 	}*/
 	
-	public TransportationToTest(Patient patient) {
+	public TransportationToExamination(Patient patient) {
 		this.startTime = Simulator.globalClock;
 		this.endTime = Simulator.globalClock + 5;
 		this.startRoom = patient.getLocation();
-		if(patient.getSeverityLevel() instanceof L1 || patient.getSeverityLevel() instanceof L2) {
-			this.endRoom = ShockRoom.deQueue();
+		if(patient.getNextEvent().equalsIgnoreCase("Tansportation To XRay")) {
+			this.endRoom = RadiographyRoom.deQueue();
+			patient.setNextEvent("XRay");
 		}
-		else {
-			this.endRoom = BoxRoom.deQueue();
+		if(patient.getNextEvent().equalsIgnoreCase("Tansportation To Blood Test")) {
+			this.endRoom = BloodTestLaboratory.deQueue();
+			patient.setNextEvent("Blood Test");
+		}
+		if(patient.getNextEvent().equalsIgnoreCase("Tansportation To MRI")) {
+			this.endRoom = MRIRoom.deQueue();
+			patient.setNextEvent("MRI");
 		}
 		this.patient = patient;
 		this.cost = 0;
@@ -30,6 +36,5 @@ public class TransportationToTest extends Event{
 		this.registerObserver(this.transporter);
 		this.registerObserver(this.endRoom);
 		patient.getLocation().removePatient(patient);
-		patient.setNextEvent("");
 	}
 }

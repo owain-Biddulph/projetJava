@@ -3,6 +3,7 @@ package core;
 import java.util.ArrayList;
 
 public class Nurse extends Person implements HumanResource {
+	private boolean available;
 	private static ArrayList<Nurse> availableNurses = new ArrayList<Nurse>();
 	
 		
@@ -14,12 +15,15 @@ public class Nurse extends Person implements HumanResource {
 		return(! availableNurses.isEmpty());
 	}
 
-	private boolean available;
-
 	@Override
 	public void update(Event event, Boolean True) {
 		if(this.available == true) {this.available = false;}
 		else	 {this.available = false;}
+		
+	}
+	@Override
+	public void update(Event event) {
+		// TODO Auto-generated method stub
 		
 	}
 }
