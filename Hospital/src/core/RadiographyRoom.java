@@ -2,6 +2,7 @@ package core;
 import java.util.*;
 
 public class RadiographyRoom extends Room {
+	private XRayScanner scanner;
 	private static ArrayList<RadiographyRoom> availableRadiographyRooms = new ArrayList<RadiographyRoom>();
 	
 		
@@ -14,7 +15,7 @@ public class RadiographyRoom extends Room {
 	}
 	
 	public RadiographyRoom () {
-		
+		this.scanner = new XRayScanner();
 	}
 	@Override
 	public void update(Event event, Boolean True) {

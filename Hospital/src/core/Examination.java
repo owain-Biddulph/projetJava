@@ -6,7 +6,6 @@ import java.util.*;
 
 public abstract class Examination extends Event{
 	protected Room room;
-	protected Examination type;
 	protected boolean consultationNeeded;
 	
 	public static String randomExamination(double noTestProbability, double radiographyProbability, double bloodTestProbability, double MRIProbability) {
