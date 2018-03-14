@@ -6,7 +6,7 @@ public class MRI extends Examination {
 	
 	public MRI(Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + UniformDistribution.get(30,70);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.uniform(30,70);
 		this.patient = patient;
 		this.room = patient.getLocation();   // TODO change patient location before creating consultation
 		this.cost = 0;

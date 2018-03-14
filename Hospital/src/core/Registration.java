@@ -7,7 +7,7 @@ public class Registration extends Event{
 	
 	public Registration(Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + ProbabilityDistribution.exp(1);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.exp(0,1);
 		this.nurse = Nurse.deQueue();
 		this.patient = patient;
 		this.cost = 0;

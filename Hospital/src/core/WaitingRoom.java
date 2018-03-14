@@ -1,7 +1,10 @@
 package core;
 
+import java.util.*;
+
 public class WaitingRoom extends Room{
 	public static WaitingRoom instance = null;
+	public ArrayList<Patient> waitingPatients = new ArrayList<Patient>();
 	
 	private WaitingRoom() {}
 	
@@ -13,7 +16,7 @@ public class WaitingRoom extends Room{
 	}
 
 	@Override
-	public void update(Event event, Boolean True) {
+	public void update(Event event, boolean start) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -7,7 +7,7 @@ public class Arrival extends Event{
 	// constructors : one predefined, one random
 	public Arrival(Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + ProbabilityDistribution.exp(1);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.exp(0,1);
 		this.patient = patient;
 		this.cost = 0;
 	}
@@ -15,7 +15,7 @@ public class Arrival extends Event{
 	public Arrival() {
 		this.cost = 0;
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + ProbabilityDistribution.exp(1);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.exp(0,1);
 		this.patient = new Patient();
 		this.registerObserver(this.patient);
 		EventQueue.add(this);

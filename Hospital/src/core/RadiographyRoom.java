@@ -18,8 +18,9 @@ public class RadiographyRoom extends Room {
 		this.scanner = new XRayScanner();
 	}
 	@Override
-	public void update(Event event, Boolean True) {
-		// TODO Auto-generated method stub
-		
+	public void update(Event event, boolean start) {
+		if(start == false) {
+			availableRadiographyRooms.add(this);
+		}	
 	}
 }

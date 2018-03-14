@@ -17,14 +17,9 @@ public class Transporter extends Person implements HumanResource {
 	private boolean available;
 
 	@Override
-	public void update(Event event, Boolean True) {
+	public void update(Event event, boolean start) {
 		if(this.available == true) {this.available = false;}
 		else	 {this.available = false;}
-		
-	}
-	@Override
-	public void update(Event event) {
-		// TODO Auto-generated method stub
 		
 	}
 }

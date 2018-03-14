@@ -10,8 +10,9 @@ public class ShockRoom extends Room{
 	}
 
 	@Override
-	public void update(Event event, Boolean True) {
-		// TODO Auto-generated method stub
-		
+	public void update(Event event, boolean start) {
+		if(start == false) {
+			availableShockRooms.add(this);
+		}	
 	}
 }

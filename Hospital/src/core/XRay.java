@@ -13,7 +13,7 @@ public class XRay extends Examination {
 	
 	public XRay(Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + UniformDistribution.get(10,20);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.uniform(10,20);
 		this.patient = patient;
 		this.room = patient.getLocation();   // TODO change patient location before creating consultation
 		this.cost = 0;

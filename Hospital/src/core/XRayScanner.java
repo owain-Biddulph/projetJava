@@ -8,10 +8,9 @@ public class XRayScanner extends NonHumanResource {
 
 	public XRayScanner() {
 		xRayScanners.add(this);
-		this.available = true;
 	}
-	public int use(Patient patient) {
-		XRay(patient);
+	public void use(Patient patient) {
+		new XRay(patient);
 		
 	}
 }

@@ -15,7 +15,7 @@ public class Consultation extends Event{
 	
 	public Consultation(Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + UniformDistribution.get(5,20);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.uniform(5,20);
 		this.patient = patient;
 		this.room = patient.getLocation();   // TODO change patient location before creating consultation
 		this.cost = 0;

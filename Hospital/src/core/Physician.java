@@ -9,14 +9,9 @@ public class Physician extends Person implements HumanResource {
 		return availablePhysicians.remove(0);
 	}
 
-	@Override
-	public void update(Event event) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
-	public void update(Event event, Boolean True) {
+	public void update(Event event, boolean start) {
 		// TODO Auto-generated method stub
 		
 	}

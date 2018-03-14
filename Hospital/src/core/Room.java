@@ -9,7 +9,4 @@ public abstract class Room extends NonHumanResource implements Observer{
 	public void addPatient(Patient patient) {this.occupants.add(patient);}
 	public void removePatient(Patient patient) {this.occupants.remove(patient);}
 	
-	public void update(Event event) {
-		
-	}
 }

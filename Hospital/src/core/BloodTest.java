@@ -6,7 +6,7 @@ public class BloodTest extends Examination{
 	
 	public BloodTest (Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + UniformDistribution.get(15,90);
+		this.endTime = Simulator.globalClock + ProbabilityDistribution.uniform(15,90);
 		this.patient = patient;
 		this.room = patient.getLocation();   // TODO change patient location before creating consultation
 		this.cost = 0;
