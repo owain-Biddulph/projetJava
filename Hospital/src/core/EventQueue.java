@@ -2,7 +2,6 @@ package core;
 
 import java.util.*;
 
-//TODO we need to make this class a greedy singleton
 public class EventQueue {
 	
 	private EventQueue() {

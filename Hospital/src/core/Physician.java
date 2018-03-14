@@ -14,5 +14,11 @@ public class Physician extends Person implements HumanResource {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void update(Event event, Boolean True) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
