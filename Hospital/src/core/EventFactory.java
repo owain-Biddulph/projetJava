@@ -15,14 +15,20 @@ public class EventFactory {
 		if(event.equalsIgnoreCase("Registration")){
 			return new Registration(patient);
 		}
-		if(event.equalsIgnoreCase("Transportation")) {
-			return new Transportation(patient);
+		if(event.equalsIgnoreCase("TransportationToConsultation")) {
+			return new TransportationToConsultation(patient);
 		}
 		if(event.equalsIgnoreCase("Consultation")) {
 			return new Consultation(patient);
 		}
-		if(event.equalsIgnoreCase("Examination")) {
-			return new Examination(patient);
+		if(event.equalsIgnoreCase("XRay")) {
+			return new XRay(patient);
+		}
+		if(event.equalsIgnoreCase("BloodTest")) {
+			return new BloodTest(patient);
+		}
+		if(event.equalsIgnoreCase("MRI")) {
+			return new MRI(patient);
 		}
 		return null;
 	}

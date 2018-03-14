@@ -6,12 +6,7 @@ public class Simulator {
 	public static int globalClock;
 	public static EventQueue eventQueue;
 	
-	public Simulator() {
-		this.globalClock = 0;
-		this.eventQueue = new EventQueue();
-	}
-	
-	public void takeStep() {
+	public static void takeStep() {
 		Event e = eventQueue.deQueue();
 		e.execute();
 		PriorityQueue<Patient>  waitingPatients = Patient.getWaitingPatients();

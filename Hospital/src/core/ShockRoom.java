@@ -8,4 +8,10 @@ public class ShockRoom extends Room{
 	public static Room deQueue() {
 		return availableShockRooms.remove(0);
 	}
+
+	@Override
+	public void update(Event event, Boolean True) {
+		// TODO Auto-generated method stub
+		
+	}
 }

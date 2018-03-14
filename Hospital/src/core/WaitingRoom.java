@@ -11,4 +11,10 @@ public class WaitingRoom extends Room{
 		}
 		return instance;
 	}
+
+	@Override
+	public void update(Event event, Boolean True) {
+		// TODO Auto-generated method stub
+		
+	}
 }

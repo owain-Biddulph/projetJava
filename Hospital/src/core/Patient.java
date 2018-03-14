@@ -9,7 +9,7 @@ public class Patient extends Person {
 	private int exitTime;
 	private String nextEvent;
 	private int priorityLevel;
-	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue();
+	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
 
 	
 	/*public Patient(String name, String surname, Room location) {
@@ -89,6 +89,13 @@ public class Patient extends Person {
 
 	public static PriorityQueue<Patient> getWaitingPatients() {
 		return waitingPatients;
+	}
+
+
+	@Override
+	public void update(Event event, Boolean True) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
