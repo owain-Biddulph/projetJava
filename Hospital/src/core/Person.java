@@ -18,6 +18,6 @@ public abstract class Person implements Observer {
 		//this.history = emptylist;
 	}*/
 	
-	
-	public abstract void update(Event event);
+	@Override
+	public abstract void update(Event event, boolean start);
 }

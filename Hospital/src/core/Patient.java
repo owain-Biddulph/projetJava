@@ -6,6 +6,8 @@ public class Patient extends Person {
 	private SeverityLevel severityLevel;
 	private Insurance insurance;
 	private Room location;
+	//the exitTime attribute indicates since when the patient is awaiting the next step in his hospital stay
+	//it helps determine the priority  of patients
 	private int exitTime;
 	private String nextEvent;
 	private int priorityLevel;
@@ -34,7 +36,8 @@ public class Patient extends Person {
 		return(Simulator.globalClock - exitTime);
 	}
 	
-	public void update(Event event) {
+	@Override
+	public void update(Event event, boolean start) {
 		this.nextEvent = event.getNextStep();
 		if(nextEvent.equals("Outcome")){} //if the patient is finished, he is released
 		else {
@@ -90,6 +93,9 @@ public class Patient extends Person {
 	public static PriorityQueue<Patient> getWaitingPatients() {
 		return waitingPatients;
 	}
+
+
+	
 
 	
 	

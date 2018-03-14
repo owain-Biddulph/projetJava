@@ -25,7 +25,9 @@ public class Arrival extends Event{
 	public void execute() {
 		Patient.getWaitingPatients().add(this.patient);
 		this.patient.setLocation(WaitingRoom.getInstance());
-		EventFactory.createEvent("Arrival");
+		Event nextArrival = EventFactory.createEvent("Arrival");
+		//there is always exactly one Arrival event in the EventQueue, when one is executed, the next one is created
+		EventQueue.add(nextArrival);
 	}
 
 
