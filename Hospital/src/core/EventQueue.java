@@ -1,5 +1,6 @@
 package core;
 
+
 import java.util.*;
 
 public class EventQueue {
@@ -30,10 +31,6 @@ public class EventQueue {
 	
 	private static PriorityQueue<Event> eventQueue = new PriorityQueue<Event>(11, comparator);
 	
-	
-	
-	//TODO pk on les mets en static celles-ci? 
-	caca
 	public static void add(Event event) {
 		eventQueue.add(event);
 	}

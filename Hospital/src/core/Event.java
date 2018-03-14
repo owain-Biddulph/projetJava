@@ -31,11 +31,17 @@ public abstract class Event implements Observable {
 	}*/
 //no more constructors###################################################
 	
+	//the 2 next methods start and finish (or execute) an event
+	public void startEvent() {
+		this.notifyObservers(true);
+	}
 	
 	public void execute() {
-		this.notifyObservers();
+		this.notifyObservers(false);
 		Simulator.globalClock = this.endTime;
 	}
+	
+
 	
 	public int getDuration() {
 		return(endTime-startTime);
@@ -48,9 +54,9 @@ public abstract class Event implements Observable {
 	
 //##################### Observer methods ######################
 	@Override
-	public void notifyObservers() {
+	public void notifyObservers(boolean start) {
 		for(Observer o:observerList) {
-			o.update(this);
+			o.update(this, start);
 		}
 	}
 	

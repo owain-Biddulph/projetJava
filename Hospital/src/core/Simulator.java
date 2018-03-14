@@ -5,7 +5,13 @@ import java.util.PriorityQueue;
 public class Simulator {
 	public static int globalClock;
 	public static EventQueue eventQueue;
+	public static PatientComparator c = new WaitTimePriority();
 	
+	public static void initialize() {
+		globalClock = 0;
+		eventQueue = EventQueue.getEventQueue();
+		Patient.setPriorityStrategy(c);
+	}
 	public static void takeStep() {
 		Event e = eventQueue.deQueue();
 		e.execute();
@@ -19,13 +25,13 @@ public class Simulator {
 			//then we create it and add it to the eventQueue
 			if(EventAvailability.isPossible(priorityEvent)) {
 				Event nextEvent = EventFactory.createEvent(priorityEvent);
+				nextEvent.startEvent();
 				eventQueue.add(nextEvent);
 			}
 		}
-		eventQueue.sort();
 	}
 	public static void main(String[] args) {
-
+		
 }
 	
 }

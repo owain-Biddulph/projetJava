@@ -12,7 +12,9 @@ public class Patient extends Person {
 	private String nextEvent;
 	private int priorityLevel;
 	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
-
+	private static PatientComparator comparator;
+	
+	
 	
 	/*public Patient(String name, String surname, Room location) {
 		this.location = location;
@@ -46,6 +48,10 @@ public class Patient extends Person {
 			this.history.add(event);
 			waitingPatients.add(this);
 		}
+	}
+	
+	public static void setPriorityStrategy(PatientComparator c) {
+		comparator = c;
 	}
 	
 	// Getters and Setters
@@ -92,19 +98,5 @@ public class Patient extends Person {
 
 	public static PriorityQueue<Patient> getWaitingPatients() {
 		return waitingPatients;
-	}
-
-
-<<<<<<< HEAD
-	
-=======
-	@Override
-	public void update(Event event, Boolean True) {
-		// TODO Auto-generated method stub
-		
-	}
->>>>>>> dd3dd98f90c4571de6c6311ddb986fbcdd37e25f
-
-	
-	
+	}	
 }
