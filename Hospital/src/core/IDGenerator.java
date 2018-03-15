@@ -1,7 +1,7 @@
 package core;
 
 public class IDGenerator {
-	public static IDGenerator instance = null;
+	private static IDGenerator instance = null;
 	private int nextID = 0;
 	
 	private IDGenerator() {}

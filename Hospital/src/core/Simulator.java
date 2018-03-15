@@ -21,7 +21,7 @@ public class Simulator {
 			Patient priorityPatient = waitingPatients.remove();
 			//priorityEvent is the event that patient needs
 			String priorityEvent = priorityPatient.getNextEvent();
-			//if this event is possible (if the ressources are there)
+			//if this event is possible (if the resources are there)
 			//then we create it and add it to the eventQueue
 			if(EventAvailability.isPossible(priorityEvent)) {
 				Event nextEvent = EventFactory.createEvent(priorityEvent);

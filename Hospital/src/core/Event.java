@@ -47,8 +47,6 @@ public abstract class Event implements Observable {
 		return(endTime-startTime);
 	}
 	
-
-
 	
 	
 	

@@ -16,21 +16,24 @@ public class Patient extends Person {
 	
 	
 	
-	/*public Patient(String name, String surname, Room location) {
-		this.location = location;
+	public Patient(String name, String surname) {
 		this.severityLevel = new SeverityLevel();
 		this.insurance = new Insurance();
 		this.nextEvent = "Registration";
 		this.name = name;
 		this.surname = surname;
 		this.ID = IDGenerator.getIDGenerator().nextID();
-	}*/
+		this.exitTime = Simulator.globalClock;
+	}
 	
 	public Patient() {
 		this.severityLevel = new SeverityLevel();
 		this.insurance = new Insurance();
 		this.nextEvent = "Registration";
 		this.ID = IDGenerator.getIDGenerator().nextID();
+		this.name = "Name";
+		this.surname = "Surname";
+		this.exitTime = Simulator.globalClock;
 	}
 	
 	

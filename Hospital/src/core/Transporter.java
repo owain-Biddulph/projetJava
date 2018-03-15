@@ -5,6 +5,19 @@ import java.util.ArrayList;
 public class Transporter extends Person implements HumanResource {
 	private static ArrayList<Transporter> availableTransporters = new ArrayList<Transporter>();
 	
+	public Transporter (String name, String surname) {
+		super();
+		this.name = name;
+		this.surname = surname;
+		this.ID = IDGenerator.getIDGenerator().nextID();
+	}
+	
+	public Transporter () {
+		this.name = "Name";
+		this.surname = "Surname";
+		this.ID = IDGenerator.getIDGenerator().nextID();
+	}
+	
 		
 	public static Transporter deQueue() {
 		//gets the next available nurse

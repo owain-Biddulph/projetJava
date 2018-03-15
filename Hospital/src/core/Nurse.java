@@ -6,6 +6,18 @@ public class Nurse extends Person implements HumanResource {
 	private boolean available;
 	private static ArrayList<Nurse> availableNurses = new ArrayList<Nurse>();
 	
+	public Nurse(String name, String surname) {
+		super();
+		this.name = name;
+		this.surname = surname;
+		this.ID = IDGenerator.getIDGenerator().nextID();
+	}
+	
+	public Nurse() {
+		this.name = "Name";
+		this.surname = "Surname";
+		this.ID = IDGenerator.getIDGenerator().nextID();
+	}
 		
 	public static Nurse deQueue() {
 		//gets the next available nurse
