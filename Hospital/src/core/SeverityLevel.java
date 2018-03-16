@@ -1,5 +1,6 @@
 package core;
 
-public class SeverityLevel {
-	private enum level {}
-}
+public interface SeverityLevel {
+	
+	public int getNextArrivalTime();
+	}

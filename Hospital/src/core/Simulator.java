@@ -24,7 +24,7 @@ public class Simulator {
 			//if this event is possible (if the resources are there)
 			//then we create it and add it to the eventQueue
 			if(EventAvailability.isPossible(priorityEvent)) {
-				Event nextEvent = EventFactory.createEvent(priorityEvent);
+				Event nextEvent = EventFactory.createEvent(priorityEvent, priorityPatient);
 				nextEvent.startEvent();
 				eventQueue.add(nextEvent);
 			}

@@ -16,8 +16,8 @@ public class Patient extends Person {
 	
 	
 	
-	public Patient(String name, String surname) {
-		this.severityLevel = new SeverityLevel();
+	public Patient(String name, String surname, SeverityLevel severity) {
+		this.severityLevel = severity;
 		this.insurance = new Insurance();
 		this.nextEvent = "Registration";
 		this.name = name;
@@ -26,8 +26,8 @@ public class Patient extends Person {
 		this.exitTime = Simulator.globalClock;
 	}
 	
-	public Patient() {
-		this.severityLevel = new SeverityLevel();
+	public Patient(SeverityLevel severity) {
+		this.severityLevel = severity;
 		this.insurance = new Insurance();
 		this.nextEvent = "Registration";
 		this.ID = IDGenerator.getIDGenerator().nextID();

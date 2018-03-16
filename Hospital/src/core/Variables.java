@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Variables {
 	
-	public class L1 {
-		private String probabilityDistribution = "Uniform";
-		private int int1 = 40;
-		private int int2 = 80;
-		private double double1;
+	public static class L1 {
+		private static String probabilityDistribution = "Uniform";
+		private static int int1 = 40;
+		private static int int2 = 80;
+		private static double double1;
 		
-		public int getNextArrivalTime() {
+		public static int getNextArrivalTime() {
 			if(probabilityDistribution.equalsIgnoreCase("Uniform")) {
 				return(Simulator.globalClock + ProbabilityDistribution.uniform(int1, int2));
 			}
@@ -33,13 +33,13 @@ public class Variables {
 		public void setDouble1(double double1) {this.double1 = double1;}	
 	}
 	
-	public class L2 {
-		private String probabilityDistribution = "Uniform";
-		private int int1 = 30;
-		private int int2 = 60;
-		private double double1;
+	public static class L2 {
+		private static String probabilityDistribution = "Uniform";
+		private static int int1 = 40;
+		private static int int2 = 80;
+		private static double double1;
 		
-		public int getNextArrivalTime() {
+		public static int getNextArrivalTime() {
 			if(probabilityDistribution.equalsIgnoreCase("Uniform")) {
 				return(Simulator.globalClock + ProbabilityDistribution.uniform(int1, int2));
 			}
@@ -62,13 +62,13 @@ public class Variables {
 		public void setDouble1(double double1) {this.double1 = double1;}	
 	}
 	
-	public class L3 {
-		private String probabilityDistribution = "Uniform";
-		private int int1 = 20;
-		private int int2 = 40;
-		private double double1;
+	public static class L3 {
+		private static String probabilityDistribution = "Uniform";
+		private static int int1 = 40;
+		private static int int2 = 80;
+		private static double double1;
 		
-		public int getNextArrivalTime() {
+		public static int getNextArrivalTime() {
 			if(probabilityDistribution.equalsIgnoreCase("Uniform")) {
 				return(Simulator.globalClock + ProbabilityDistribution.uniform(int1, int2));
 			}
@@ -91,13 +91,13 @@ public class Variables {
 		public void setDouble1(double double1) {this.double1 = double1;}	
 	}
 	
-	public class L4 {
-		private String probabilityDistribution = "Uniform";
-		private int int1 = 5;
-		private int int2 = 20;
-		private double double1;
+	public static class L4 {
+		private static String probabilityDistribution = "Uniform";
+		private static int int1 = 40;
+		private static int int2 = 80;
+		private static double double1;
 		
-		public int getNextArrivalTime() {
+		public static int getNextArrivalTime() {
 			if(probabilityDistribution.equalsIgnoreCase("Uniform")) {
 				return(Simulator.globalClock + ProbabilityDistribution.uniform(int1, int2));
 			}
@@ -120,13 +120,13 @@ public class Variables {
 		public void setDouble1(double double1) {this.double1 = double1;}	
 	}
 	
-	public class L5 {
-		private String probabilityDistribution = "Uniform";
-		private int int1 = 5;
-		private int int2 = 20;
-		private double double1;
+	public static class L5 {
+		private static String probabilityDistribution = "Uniform";
+		private static int int1 = 40;
+		private static int int2 = 80;
+		private static double double1;
 		
-		public int getNextArrivalTime() {
+		public static int getNextArrivalTime() {
 			if(probabilityDistribution.equalsIgnoreCase("Uniform")) {
 				return(Simulator.globalClock + ProbabilityDistribution.uniform(int1, int2));
 			}
