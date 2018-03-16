@@ -4,6 +4,29 @@ import java.util.Scanner;
 
 public class Variables {
 	
+	public static class Registration {
+		private static int time = 1;
+		private static int cost = 0;
+		
+		public static int getTime() {return time;}
+		public static void setTime(int time) {Registration.time = time;}
+		public static int getCost() {return cost;}
+		public static void setCost(int cost) {Registration.cost = cost;}
+		
+	}
+	
+	public static class test {
+		private static int time = 1;
+		private static int cost = 0;
+		
+		public static int getTime() {return time;}
+		public static void setTime(int time) {Registration.time = time;}
+		public static int getCost() {return cost;}
+		public static void setCost(int cost) {Registration.cost = cost;}
+		
+	}
+
+	
 	public static class L1 {
 		private static String probabilityDistribution = "Uniform";
 		private static int int1 = 40;
@@ -148,4 +171,5 @@ public class Variables {
 		public void setInt2(int int2) {this.int2 = int2;}
 		public void setDouble1(double double1) {this.double1 = double1;}	
 	}
+
 }

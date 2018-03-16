@@ -16,6 +16,7 @@ public class Simulator {
 		Event e = eventQueue.deQueue();
 		e.execute();
 		PriorityQueue<Patient>  waitingPatients = Patient.getWaitingPatients();
+		//On peut faire le remove de waiting list dans le update de patient (je l'ai fait)
 		while(! waitingPatients.isEmpty()) {
 			//priorityPatient is the most important patient in the waiting queue
 			Patient priorityPatient = waitingPatients.remove();

@@ -43,6 +43,9 @@ public class Patient extends Person {
 	
 	@Override
 	public void update(Event event, boolean start) {
+		if(start == true) {
+			Patient.waitingPatients.remove(this);
+		}
 		this.nextEvent = event.getNextStep();
 		if(nextEvent.equals("Outcome")){} //if the patient is finished, he is released
 		else {
