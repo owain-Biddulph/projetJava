@@ -34,6 +34,9 @@ public class Nurse extends Person implements HumanResource {
 		if(start = true) 
 		{this.available = false;}
 		else 
-		{this.available = true;}
+		{
+			Nurse.availableNurses.add(this);
+			this.available = true;
+		}
 	}
 }
