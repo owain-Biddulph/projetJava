@@ -1,4 +1,4 @@
-package core;
+package events;
 
 
 import java.util.*;
@@ -20,7 +20,7 @@ public class EventQueue {
 			if(e1.getEndTime() < e2.getEndTime()) {
 				return(-1);
 			}
-			if(e1.endTime>e2.endTime) {
+			if(e1.getEndTime()>e2.getEndTime()) {
 				return(1);
 			}
 			return 0;

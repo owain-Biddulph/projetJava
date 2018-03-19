@@ -1,4 +1,12 @@
-package core;
+package events;
+
+import core.DTDT;
+import core.Examination;
+import core.Patient;
+import core.Physician;
+import core.ProbabilityDistribution;
+import core.Simulator;
+import room.Room;
 
 public class Consultation extends Event{
 	private Physician physician;
@@ -23,6 +31,10 @@ public class Consultation extends Event{
 		this.registerObserver(patient);
 		this.registerObserver(this.room);
 		this.registerObserver(this.physician);
+		if(patient.getNotYetConsulted() == true) {
+			DTDT.addDTDT(Simulator.globalClock - patient.getArrivalTime());
+			patient.setNotYetConsulted(false);
+		}
 		this.examNeeded = Examination.randomExamination(0.35, 0.2, 0.4, 0.05);
 		//randomly chooses to say what exam is needed (possible that it is No Examination)
 		if(examNeeded.equalsIgnoreCase("No Exam")) {patient.setNextEvent("Outcome");}

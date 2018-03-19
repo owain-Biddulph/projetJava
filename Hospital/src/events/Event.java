@@ -1,6 +1,11 @@
-package core;
+package events;
 
 import java.util.*;
+
+import core.Observable;
+import core.Observer;
+import core.Patient;
+import core.Simulator;
 
 public abstract class Event implements Observable {
 
@@ -34,6 +39,7 @@ public abstract class Event implements Observable {
 	//the 2 next methods start and finish (or execute) an event
 	public void startEvent() {
 		this.notifyObservers(true);
+		Simulator.globalClock = this.startTime;
 	}
 	
 	public void execute() {

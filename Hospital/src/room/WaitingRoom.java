@@ -1,6 +1,9 @@
-package core;
+package room;
 
 import java.util.*;
+
+import core.Patient;
+import events.Event;
 
 public class WaitingRoom extends Room{
 	public static WaitingRoom instance = null;

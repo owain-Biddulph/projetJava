@@ -1,5 +1,7 @@
 package core;
 
+import events.Event;
+
 public class RegistrationDesk implements Observer {
 	private static RegistrationDesk instance = null;
 	private Patient patient = null;

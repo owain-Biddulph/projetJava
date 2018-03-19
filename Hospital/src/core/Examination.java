@@ -2,6 +2,9 @@ package core;
 
 import java.util.*;
 
+import events.Event;
+import room.Room;
+
 
 
 public abstract class Examination extends Event{

@@ -1,4 +1,6 @@
-package core;
+package events;
+
+import core.Nurse;
 
 public class EventAvailability {
 	

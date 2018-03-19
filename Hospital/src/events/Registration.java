@@ -1,5 +1,11 @@
-package core;
+package events;
 
+import core.Nurse;
+import core.Patient;
+import core.RegistrationDesk;
+import core.Simulator;
+import core.Variables;
+import core.Variables.Registration;
 
 public class Registration extends Event{
 	private Nurse nurse;

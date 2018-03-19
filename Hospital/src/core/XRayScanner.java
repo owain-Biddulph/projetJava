@@ -2,6 +2,8 @@ package core;
 
 import java.util.*;
 
+import events.XRay;
+
 public class XRayScanner extends NonHumanResource {
 	private static List<XRayScanner> xRayScanners = new ArrayList<XRayScanner>();
 	private static String probabilityDistribution;

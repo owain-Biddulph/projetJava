@@ -1,4 +1,12 @@
-package core;
+package events;
+
+import core.BloodTestLaboratory;
+import core.Equipment;
+import core.Patient;
+import core.Simulator;
+import room.MRIRoom;
+import room.RadiographyRoom;
+import room.Room;
 
 public class TransportationToExamination extends Event{
 	private Room startRoom;

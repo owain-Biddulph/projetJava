@@ -12,7 +12,6 @@ public class Variables {
 		public static void setTime(int time) {Registration.time = time;}
 		public static int getCost() {return cost;}
 		public static void setCost(int cost) {Registration.cost = cost;}
-		
 	}
 	
 	public static class test {
@@ -26,7 +25,6 @@ public class Variables {
 		
 	}
 
-	
 	public static class L1 {
 		private static String probabilityDistribution = "Uniform";
 		private static int int1 = 40;

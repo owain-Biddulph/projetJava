@@ -2,6 +2,8 @@ package core;
 
 import java.util.ArrayList;
 
+import events.Event;
+
 public class Physician extends Person implements HumanResource {
 	private static ArrayList<Physician> availablePhysicians = new ArrayList<Physician>();
 	

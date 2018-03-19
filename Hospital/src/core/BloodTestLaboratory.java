@@ -2,6 +2,9 @@ package core;
 
 import java.util.*;
 
+import events.Event;
+import room.Room;
+
 public class BloodTestLaboratory extends Room {
 	private static ArrayList<BloodTestLaboratory> availableBloodTestLaboratories = new ArrayList<BloodTestLaboratory>();
 	

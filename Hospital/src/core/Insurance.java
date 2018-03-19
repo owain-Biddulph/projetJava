@@ -12,7 +12,7 @@ public class Insurance {
 	}
 	//random constructor
 	public Insurance() {
-		int i = ProbabilityDistribution.gamma(0,2);
+		int i = ProbabilityDistribution.uniform(0,2);
 		if(i==0) {this.type = "no insurance";}
 		if (i==1) {this.type = "silver";}
 		if (i==2) {this.type = "gold";}

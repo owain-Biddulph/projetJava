@@ -1,4 +1,10 @@
-package core;
+package events;
+
+import core.Examination;
+import core.Patient;
+import core.ProbabilityDistribution;
+import core.Simulator;
+import room.Room;
 
 public class XRay extends Examination {
 	private Room room;

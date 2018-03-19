@@ -1,6 +1,10 @@
-package core;
+package events;
 
 import java.util.ArrayList;
+
+import core.HumanResource;
+import core.IDGenerator;
+import core.Person;
 
 public class Transporter extends Person implements HumanResource {
 	private static ArrayList<Transporter> availableTransporters = new ArrayList<Transporter>();

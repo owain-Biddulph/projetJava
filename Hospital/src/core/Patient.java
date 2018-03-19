@@ -2,6 +2,9 @@ package core;
 
 import java.util.*;
 
+import events.Event;
+import room.Room;
+
 public class Patient extends Person {
 	private SeverityLevel severityLevel;
 	private Insurance insurance;
@@ -11,6 +14,8 @@ public class Patient extends Person {
 	private int exitTime;
 	private String nextEvent;
 	private int priorityLevel;
+	private int arrivalTime;
+	private boolean notYetConsulted = true;
 	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
 	private static PatientComparator comparator;
 	
@@ -24,6 +29,7 @@ public class Patient extends Person {
 		this.surname = surname;
 		this.ID = IDGenerator.getIDGenerator().nextID();
 		this.exitTime = Simulator.globalClock;
+		this.arrivalTime = Simulator.globalClock;
 	}
 	
 	public Patient(SeverityLevel severity) {
@@ -34,6 +40,7 @@ public class Patient extends Person {
 		this.name = "Name";
 		this.surname = "Surname";
 		this.exitTime = Simulator.globalClock;
+		this.arrivalTime = Simulator.globalClock;
 	}
 	
 	
@@ -49,7 +56,7 @@ public class Patient extends Person {
 		this.nextEvent = event.getNextStep();
 		if(nextEvent.equals("Outcome")){} //if the patient is finished, he is released
 		else {
-			exitTime = event.endTime;
+			exitTime = event.getEndTime();
 			//available = true;
 			this.history.add(event);
 			waitingPatients.add(this);
@@ -101,8 +108,13 @@ public class Patient extends Person {
 	public void setNextEvent(String nextEvent) {
 		this.nextEvent = nextEvent;
 	}
+	
+	public int getArrivalTime() {return this.arrivalTime;}
+	public boolean getNotYetConsulted() {return this.notYetConsulted;}
+	public void setNotYetConsulted(boolean bool) {this.notYetConsulted = bool;}
 
 	public static PriorityQueue<Patient> getWaitingPatients() {
 		return waitingPatients;
-	}	
+	}
+
 }

@@ -3,6 +3,8 @@ package core;
 import java.util.ArrayList;
 import java.util.List;
 
+import events.Event;
+
 public abstract class Person implements Observer {
 	protected String name;
 	protected String surname;

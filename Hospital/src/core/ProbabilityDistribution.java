@@ -4,14 +4,8 @@ import java.util.Random;
 
 public class ProbabilityDistribution {
 	private static Random rand = new Random();
-	// contains random int functions. should return an int between 0 and i-1
-	public static int gamma(int i, int j) {
-		return(0);
-	}
 	
-	public static int logNorm(int i, int j) {
-		return(0);
-	}
+	public static double det(double delta) {return delta;}
 	
 	public static int exp(double lambda) {
 		return (int) (-(1/lambda)*Math.log(1 - rand.nextDouble()));

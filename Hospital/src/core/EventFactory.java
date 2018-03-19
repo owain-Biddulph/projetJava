@@ -1,5 +1,16 @@
 package core;
 
+import events.Arrival;
+import events.BloodTest;
+import events.Consultation;
+import events.Event;
+import events.MRI;
+import events.Outcome;
+import events.Registration;
+import events.TransportationToConsultation;
+import events.TransportationToExamination;
+import events.XRay;
+
 public class EventFactory {
 		
 	public static Event createEvent(String event, Patient patient) {
@@ -15,6 +26,9 @@ public class EventFactory {
 		if(event.equalsIgnoreCase("Consultation")) {
 			return new Consultation(patient);
 		}
+		if(event.equalsIgnoreCase("TransportationToCExamination")) {
+			return new TransportationToExamination(patient);
+		}
 		if(event.equalsIgnoreCase("XRay")) {
 			return new XRay(patient);
 		}
@@ -23,6 +37,9 @@ public class EventFactory {
 		}
 		if(event.equalsIgnoreCase("MRI")) {
 			return new MRI(patient);
+		}
+		if(event.equalsIgnoreCase("Outcome")) {
+			return new Outcome(patient);
 		}
 		return null;
 	}

@@ -1,5 +1,14 @@
-package core;
+package events;
 
+import core.Equipment;
+import core.L1;
+import core.L2;
+import core.Nurse;
+import core.Patient;
+import core.ShockRoom;
+import core.Simulator;
+import room.BoxRoom;
+import room.Room;
 
 public class TransportationToConsultation extends Event{
 	private Room startRoom;

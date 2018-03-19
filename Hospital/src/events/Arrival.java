@@ -1,8 +1,14 @@
-package core;
+package events;
+
+import core.EventFactory;
+import core.Patient;
+import core.Simulator;
+import core.WaitingRoom;
 
 //Finished
 
 public class Arrival extends Event{
+	
 	
 	// constructors : one predefined, one random
 	public Arrival(Patient patient) {
