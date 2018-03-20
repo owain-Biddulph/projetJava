@@ -1,14 +1,17 @@
 package events;
 
-import core.Nurse;
-import core.Patient;
+import java.util.PriorityQueue;
+
 import core.RegistrationDesk;
 import core.Simulator;
 import core.Variables;
-import core.Variables.Registration;
+import person.Nurse;
+import person.Patient;
 
 public class Registration extends Event{
+	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
 	private Nurse nurse;
+	private String nextStep = "TransportationToConsultation";
 	
 	public Registration(Patient patient) {
 		this.startTime = Simulator.globalClock;
@@ -22,7 +25,7 @@ public class Registration extends Event{
 		this.patient.setNextEvent("TransportationToConsultation");
 	}
 	
-
+	public static PriorityQueue<Patient> getQueue() {return waitingPatients;}
 	
 	/*public Registration(Patient patient) {
 		this.startTime = Simulator.globalClock;

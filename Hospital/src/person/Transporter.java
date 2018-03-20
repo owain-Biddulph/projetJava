@@ -1,10 +1,9 @@
-package events;
+package person;
 
 import java.util.ArrayList;
 
-import core.HumanResource;
 import core.IDGenerator;
-import core.Person;
+import events.Event;
 
 public class Transporter extends Person implements HumanResource {
 	private static ArrayList<Transporter> availableTransporters = new ArrayList<Transporter>();
@@ -31,12 +30,10 @@ public class Transporter extends Person implements HumanResource {
 		return(! availableTransporters.isEmpty());
 	}
 
-	private boolean available;
-
 	@Override
 	public void update(Event event, boolean start) {
-		if(this.available == true) {this.available = false;}
-		else	 {this.available = false;}
-		
+		if(!start) {
+			Transporter.availableTransporters.add(this);
+		}
 	}
 }

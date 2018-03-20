@@ -1,14 +1,18 @@
 package room;
 import java.util.*;
 
-import core.XRayScanner;
 import events.Event;
+import ressources.XRayScanner;
 
 public class RadiographyRoom extends Room {
 	private XRayScanner scanner;
 	private static ArrayList<RadiographyRoom> availableRadiographyRooms = new ArrayList<RadiographyRoom>();
 	
-		
+	public ArrayList<RadiographyRoom> getQueue(){
+		return(availableRadiographyRooms);
+	}
+
+	
 	public static Room deQueue() {
 		RadiographyRoom room = availableRadiographyRooms.remove(0);
 		if(room.getOccupants().size() < room.getSize() -1) {availableRadiographyRooms.add(room);}
@@ -25,7 +29,9 @@ public class RadiographyRoom extends Room {
 	@Override
 	public void update(Event event, boolean start) {
 		if(start == false) {
-			availableRadiographyRooms.add(this);
+			if(!availableRadiographyRooms.contains(this)) {
+				availableRadiographyRooms.add(this);
+			}			
 		}	
 	}
 }

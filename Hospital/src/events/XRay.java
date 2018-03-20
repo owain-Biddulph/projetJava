@@ -1,13 +1,19 @@
 package events;
 
-import core.Examination;
-import core.Patient;
+import java.util.PriorityQueue;
+
 import core.ProbabilityDistribution;
 import core.Simulator;
+import core.Variables;
+import person.Nurse;
+import person.Patient;
+import person.Physician;
 import room.Room;
 
 public class XRay extends Examination {
+	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
 	private Room room;
+	private Physician physician;
 	
 	/*public static XRay(Patient patient, int endTime) {
 		super();
@@ -19,12 +25,17 @@ public class XRay extends Examination {
 	
 	public XRay(Patient patient) {
 		this.startTime = Simulator.globalClock;
-		this.endTime = Simulator.globalClock + ProbabilityDistribution.uniform(10,20);
+		this.endTime = Simulator.globalClock + Variables.XRay.getTime();
 		this.patient = patient;
-		this.room = patient.getLocation();   // TODO change patient location before creating consultation
-		this.cost = 0;
+		this.physician = Physician.deQueue();
+		this.room = patient.getLocation();   
+		this.cost = Variables.XRay.getCost();
 		this.registerObserver(patient);
 		this.registerObserver(this.room);
+		this.registerObserver(this.physician);
 		this.patient.setNextEvent("TransportationToConsultation");
 	}
+	
+	public static PriorityQueue<Patient> getQueue() {return waitingPatients;}
+	
 }

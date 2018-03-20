@@ -1,22 +1,26 @@
 package events;
 
+import java.util.PriorityQueue;
+
 import core.EventFactory;
-import core.Patient;
 import core.Simulator;
-import core.WaitingRoom;
+import core.Variables;
+import person.Patient;
+import room.WaitingRoom;
 
 //Finished
-
+import room.WaitingRoom;
 public class Arrival extends Event{
-	
 	
 	// constructors : one predefined, one random
 	public Arrival(Patient patient) {
+		super();
 		this.startTime = Simulator.globalClock;
 		this.endTime = patient.getSeverityLevel().getNextArrivalTime();
 		this.patient = patient;
-		this.cost = 0;
+		this.cost = Variables.Arrival.getCost();
 		this.registerObserver(this.patient);
+		this.setNextStep("Registration");
 	}
 	
 	/*public Arrival() {
@@ -29,6 +33,7 @@ public class Arrival extends Event{
 	
 	@Override
 	public void execute() {
+		this.notifyObservers(false);
 		Patient.getWaitingPatients().add(this.patient);
 		this.patient.setLocation(WaitingRoom.getInstance());
 		try {

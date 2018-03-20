@@ -2,8 +2,8 @@ package room;
 
 import java.util.*;
 
-import core.Patient;
 import events.Event;
+import person.Patient;
 
 public class WaitingRoom extends Room{
 	public static WaitingRoom instance = null;
@@ -20,7 +20,9 @@ public class WaitingRoom extends Room{
 
 	@Override
 	public void update(Event event, boolean start) {
-		// TODO Auto-generated method stub
+		if(start) {
+			this.removePatient(event.getPatient());
+		}
 		
 	}
 }

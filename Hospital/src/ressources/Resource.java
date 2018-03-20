@@ -1,4 +1,4 @@
-package core;
+package ressources;
 
 public interface Resource {
 

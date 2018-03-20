@@ -2,13 +2,17 @@ package events;
 
 import java.util.*;
 
+
 import core.Observable;
 import core.Observer;
-import core.Patient;
 import core.Simulator;
+import person.Patient;
+import room.Room;
+import room.WaitingRoom;
 
 public abstract class Event implements Observable {
-
+	
+	protected Room endRoom = WaitingRoom.getInstance();
 	protected int startTime;
 	protected int endTime;
 	protected int cost;
@@ -20,7 +24,9 @@ public abstract class Event implements Observable {
 	public String getNextStep() {
 		return(nextStep);
 	}
-
+	public void setNextStep(String event) {
+		this.nextStep = event;
+	}
 	
 //constructors###########################################################
 	/*public Event(int startTime, Patient patient) {
@@ -62,6 +68,10 @@ public abstract class Event implements Observable {
 		for(Observer o:observerList) {
 			o.update(this, start);
 		}
+	}
+	
+	public Room getEndRoom() {
+		return(endRoom);
 	}
 	
 	@Override

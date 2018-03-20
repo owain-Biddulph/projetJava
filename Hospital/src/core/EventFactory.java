@@ -10,6 +10,7 @@ import events.Registration;
 import events.TransportationToConsultation;
 import events.TransportationToExamination;
 import events.XRay;
+import person.Patient;
 
 public class EventFactory {
 		

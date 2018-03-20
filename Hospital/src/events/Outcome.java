@@ -1,8 +1,8 @@
 package events;
 
 import core.LOS;
-import core.Patient;
 import core.Simulator;
+import person.Patient;
 
 public class Outcome extends Event{
 	private boolean successful;

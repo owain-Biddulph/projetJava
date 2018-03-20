@@ -1,8 +1,8 @@
-package core;
+package events;
 
 import java.util.*;
 
-import events.Event;
+import person.Patient;
 import room.Room;
 
 

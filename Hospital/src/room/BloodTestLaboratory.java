@@ -1,14 +1,15 @@
-package core;
+package room;
 
 import java.util.*;
 
 import events.Event;
-import room.Room;
 
 public class BloodTestLaboratory extends Room {
 	private static ArrayList<BloodTestLaboratory> availableBloodTestLaboratories = new ArrayList<BloodTestLaboratory>();
 	
-		
+	public ArrayList<BloodTestLaboratory> getQueue(){
+		return(availableBloodTestLaboratories);
+	}
 	public static BloodTestLaboratory deQueue() {
 		//gets the next available nurse
 		return availableBloodTestLaboratories.remove(0);
@@ -24,7 +25,8 @@ public class BloodTestLaboratory extends Room {
 	@Override
 	public void update(Event event, boolean start) {
 		if(start == false) {
-			availableBloodTestLaboratories.add(this);
+			if(!availableBloodTestLaboratories.contains(this)) {
+			availableBloodTestLaboratories.add(this);}
 		}	
 	}
 }

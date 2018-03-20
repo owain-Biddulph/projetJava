@@ -6,6 +6,10 @@ import events.Event;
 
 public class BoxRoom extends Room {
 	private static ArrayList<BoxRoom> availableBoxRooms = new ArrayList<BoxRoom>();
+	public ArrayList<BoxRoom> getQueue(){
+		return(availableBoxRooms);
+	}
+
 	
 	public static Room deQueue() {
 		BoxRoom room = availableBoxRooms.remove(0);
@@ -16,7 +20,9 @@ public class BoxRoom extends Room {
 	@Override
 	public void update(Event event, boolean start) {
 		if(start == false) {
-			availableBoxRooms.add(this);
+			if(!availableBoxRooms.contains(this)) {
+				availableBoxRooms.add(this);
+			}
 		}	
 	}
 }

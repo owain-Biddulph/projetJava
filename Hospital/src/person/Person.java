@@ -1,8 +1,9 @@
-package core;
+package person;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import core.Observer;
 import events.Event;
 
 public abstract class Person implements Observer {

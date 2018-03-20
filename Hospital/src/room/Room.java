@@ -1,10 +1,10 @@
 package room;
 import java.util.*;
 
-import core.NonHumanResource;
 import core.Observer;
-import core.Patient;
-
+import person.Patient;
+import ressources.NonHumanResource;
+//TODO faire la création d'une multitude de chambres, (que l'utilisateur peut régler)
 public abstract class Room extends NonHumanResource implements Observer{
 	private int number;
 	private int size;

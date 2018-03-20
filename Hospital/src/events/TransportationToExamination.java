@@ -1,14 +1,19 @@
-package events;
+ package events;
 
-import core.BloodTestLaboratory;
-import core.Equipment;
-import core.Patient;
+import java.util.PriorityQueue;
+
 import core.Simulator;
+import core.Variables;
+import person.Patient;
+import person.Transporter;
+import ressources.Equipment;
+import room.BloodTestLaboratory;
 import room.MRIRoom;
 import room.RadiographyRoom;
 import room.Room;
 
 public class TransportationToExamination extends Event{
+	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
 	private Room startRoom;
 	private Room endRoom;
 	private Equipment equipment;
@@ -27,22 +32,24 @@ public class TransportationToExamination extends Event{
 		this.startRoom = patient.getLocation();
 		if(patient.getNextEvent().equalsIgnoreCase("Tansportation To XRay")) {
 			this.endRoom = RadiographyRoom.deQueue();
-			patient.setNextEvent("XRay");
+			this.setNextStep("XRay");
 		}
 		if(patient.getNextEvent().equalsIgnoreCase("Tansportation To Blood Test")) {
 			this.endRoom = BloodTestLaboratory.deQueue();
-			patient.setNextEvent("Blood Test");
+			this.setNextStep("BloodTest");
 		}
 		if(patient.getNextEvent().equalsIgnoreCase("Tansportation To MRI")) {
 			this.endRoom = MRIRoom.deQueue();
-			patient.setNextEvent("MRI");
+			this.setNextStep("MRI");
 		}
 		this.patient = patient;
-		this.cost = 0;
+		this.cost = Variables.TransportationToExamination.getCost();
 		this.transporter = Transporter.deQueue();
 		this.registerObserver(patient);
 		this.registerObserver(this.transporter);
 		this.registerObserver(this.endRoom);
-		patient.getLocation().removePatient(patient);
+		this.registerObserver(this.startRoom);
 	}
+	
+	public static PriorityQueue<Patient> getQueue() {return waitingPatients;}
 }

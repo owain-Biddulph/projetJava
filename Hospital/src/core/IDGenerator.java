@@ -1,5 +1,5 @@
 package core;
-
+//singleton
 public class IDGenerator {
 	private static IDGenerator instance = null;
 	private int nextID = 0;

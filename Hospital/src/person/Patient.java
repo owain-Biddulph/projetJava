@@ -1,9 +1,16 @@
-package core;
+package person;
 
 import java.util.*;
 
+import core.IDGenerator;
+import core.Insurance;
+import core.PatientComparator;
+import core.SeverityLevel;
+import core.Simulator;
+import core.addToQueues;
 import events.Event;
 import room.Room;
+import room.WaitingRoom;
 
 public class Patient extends Person {
 	private SeverityLevel severityLevel;
@@ -53,13 +60,16 @@ public class Patient extends Person {
 		if(start == true) {
 			Patient.waitingPatients.remove(this);
 		}
-		this.nextEvent = event.getNextStep();
-		if(nextEvent.equals("Outcome")){} //if the patient is finished, he is released
 		else {
-			exitTime = event.getEndTime();
-			//available = true;
-			this.history.add(event);
-			waitingPatients.add(this);
+			this.nextEvent = event.getNextStep();
+			if(nextEvent.equals("Outcome")){} //if the patient is finished, he is released
+			else {
+				exitTime = event.getEndTime();
+				this.location = event.getEndRoom();
+				this.history.add(event);
+				addToQueues.add(this);
+			}
+			
 		}
 	}
 	

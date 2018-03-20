@@ -1,11 +1,11 @@
-package core;
+package person;
 
 import java.util.ArrayList;
 
+import core.IDGenerator;
 import events.Event;
 
 public class Nurse extends Person implements HumanResource {
-	private boolean available;
 	private static ArrayList<Nurse> availableNurses = new ArrayList<Nurse>();
 	
 	public Nurse(String name, String surname) {
@@ -33,12 +33,10 @@ public class Nurse extends Person implements HumanResource {
 
 	@Override
 	public void update(Event event, boolean start) {
-		if(start = true) 
-		{this.available = false;}
+		if(start = true) {}
 		else 
 		{
 			Nurse.availableNurses.add(this);
-			this.available = true;
 		}
 	}
 }

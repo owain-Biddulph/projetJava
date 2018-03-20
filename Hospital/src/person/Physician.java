@@ -1,7 +1,8 @@
-package core;
+package person;
 
 import java.util.ArrayList;
 
+import core.IDGenerator;
 import events.Event;
 
 public class Physician extends Person implements HumanResource {
@@ -12,6 +13,10 @@ public class Physician extends Person implements HumanResource {
 		this.name = name;
 		this.surname = surname;
 		this.ID = IDGenerator.getIDGenerator().nextID();
+	}
+	
+	public static boolean available() {
+		return(!availablePhysicians.isEmpty());
 	}
 	
 	public Physician () {

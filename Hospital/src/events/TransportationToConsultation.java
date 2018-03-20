@@ -1,20 +1,25 @@
 package events;
 
-import core.Equipment;
+import java.util.PriorityQueue;
+
 import core.L1;
 import core.L2;
-import core.Nurse;
-import core.Patient;
-import core.ShockRoom;
 import core.Simulator;
+import core.Variables;
+import person.Nurse;
+import person.Patient;
+import ressources.Equipment;
 import room.BoxRoom;
 import room.Room;
+import room.ShockRoom;
 
 public class TransportationToConsultation extends Event{
+	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();
 	private Room startRoom;
 	private Room endRoom;
 	private Equipment equipment;
 	private Nurse nurse;
+	private String nextEvent = "Consultation";
 	
 	/*public Transportation(Patient patient, int time, Equipment equipment, Room startRoom, Room endRoom) {
 		this.patient = patient;
@@ -34,12 +39,13 @@ public class TransportationToConsultation extends Event{
 			this.endRoom = BoxRoom.deQueue();
 		}
 		this.patient = patient;
-		this.cost = 0;
+		this.cost = Variables.TransportationToConsultation.getCost();
 		this.nurse = Nurse.deQueue();
 		this.registerObserver(patient);
 		this.registerObserver(this.nurse);
 		this.registerObserver(this.endRoom);
-		patient.getLocation().removePatient(patient);
-		patient.setNextEvent("Consultation");
+		this.registerObserver(this.startRoom);
 	}
+	
+	public static PriorityQueue<Patient> getQueue() {return waitingPatients;}
 }

@@ -1,8 +1,9 @@
-package core;
+package ressources;
 
 import java.util.*;
 
 import events.XRay;
+import person.Patient;
 
 public class XRayScanner extends NonHumanResource {
 	private static List<XRayScanner> xRayScanners = new ArrayList<XRayScanner>();

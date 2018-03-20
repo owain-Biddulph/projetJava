@@ -1,5 +1,7 @@
 package core;
 
+import person.Patient;
+
 public class WaitTimePriority implements PatientComparator {
 	//the priority is simply the waiting time in this strategy
 	@Override
