@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 import core.IDGenerator;
 import events.Event;
+import room.ShockRoom;
 
 public class Nurse extends Person implements HumanResource {
 	private static ArrayList<Nurse> availableNurses = new ArrayList<Nurse>();
 	
+	public static ArrayList<Nurse> getQueue(){
+		return(availableNurses);
+	}
 	public Nurse(String name, String surname) {
 		super();
 		this.name = name;

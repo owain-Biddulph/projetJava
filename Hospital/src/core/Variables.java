@@ -415,12 +415,6 @@ public class Variables {
 		public static void setNumber(int number) {Transporter.number = number;}
 	}
 	
-	public static class Bed {
-		private static int number = 1;
-		
-		public static int getNumber() {return number;}
-		public static void setNumber(int number) {Bed.number = number;}
-	}
 	
 	public static class Stretcher {
 		private static int number = 1;
@@ -445,35 +439,50 @@ public class Variables {
 
 	public static class BloodTestLaboratory {
 		private static int number = 1;
+		private static int size = 1;
 		
+		public static int getSize() {return size;}
+		public static void setSize(int size) {BloodTestLaboratory.size = size;}
 		public static int getNumber() {return number;}
 		public static void setNumber(int number) {BloodTestLaboratory.number = number;}
 	}
 
 	public static class BoxRoom {
 		private static int number = 1;
+		private static int size = 1;
 		
+		public static int getSize() {return size;}
+		public static void setSize(int size) {BoxRoom.size = size;}
 		public static int getNumber() {return number;}
 		public static void setNumber(int number) {BoxRoom.number = number;}
 	}
 	
 	public static class MRIRoom {
 		private static int number = 1;
+		private static int size = 1;
 		
+		public static int getSize() {return size;}
+		public static void setSize(int size) {MRIRoom.size = size;}
 		public static int getNumber() {return number;}
 		public static void setNumber(int number) {MRIRoom.number = number;}
 	}
 	
 	public static class RadiographyRoom {
 		private static int number = 1;
+		private static int size = 1;
 		
+		public static int getSize() {return size;}
+		public static void setSize(int size) {RadiographyRoom.size = size;}
 		public static int getNumber() {return number;}
 		public static void setNumber(int number) {RadiographyRoom.number = number;}
 	}
 	
 	public static class ShockRoom {
 		private static int number = 1;
+		private static int size = 1;
 		
+		public static int getSize() {return size;}
+		public static void setSize(int size) {ShockRoom.size = size;}
 		public static int getNumber() {return number;}
 		public static void setNumber(int number) {ShockRoom.number = number;}
 	}

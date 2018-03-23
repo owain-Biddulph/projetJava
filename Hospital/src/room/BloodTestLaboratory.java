@@ -2,12 +2,13 @@ package room;
 
 import java.util.*;
 
+import core.Variables;
 import events.Event;
 
 public class BloodTestLaboratory extends Room {
 	private static ArrayList<BloodTestLaboratory> availableBloodTestLaboratories = new ArrayList<BloodTestLaboratory>();
 	
-	public ArrayList<BloodTestLaboratory> getQueue(){
+	public static ArrayList<BloodTestLaboratory> getQueue(){
 		return(availableBloodTestLaboratories);
 	}
 	public static BloodTestLaboratory deQueue() {
@@ -18,8 +19,8 @@ public class BloodTestLaboratory extends Room {
 		return(! availableBloodTestLaboratories.isEmpty());
 	}
 	
-	public BloodTestLaboratory () {
-		
+	public BloodTestLaboratory() {
+		this.size = Variables.BloodTestLaboratory.getSize();
 	}
 	
 	@Override

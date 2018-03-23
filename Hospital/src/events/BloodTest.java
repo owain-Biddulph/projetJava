@@ -2,13 +2,12 @@ package events;
 
 import java.util.PriorityQueue;
 
-import core.ProbabilityDistribution;
+
 import core.Simulator;
 import core.Variables;
 import person.Nurse;
 import person.Patient;
 import room.Room;
-import room.WaitingRoom;
 
 public class BloodTest extends Examination{
 	private static PriorityQueue<Patient> waitingPatients = new PriorityQueue<Patient>();

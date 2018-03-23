@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="core.Variables.Transporter" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="131" x="2213" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="core.Variables.Wheelchair" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="131" x="2384" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="core.Insurance" project="Hospital" file="/Hospital/src/core/Insurance.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="111" x="291" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="core.Variables.Consultation" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="202" x="2555" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="core.Variables.TransportationToConsultation" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="224" x="2797" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="core.LOS" project="Hospital" file="/Hospital/src/core/LOS.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="142" x="1849" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="core.Variables.L2" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="202" x="3061" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="core.Variables.TransportationToExamination" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="222" x="3303" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="core.Variables.L1" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="202" x="3565" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="core.addToQueues" project="Hospital" file="/Hospital/src/core/addToQueues.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="117" x="442" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="core.IDGenerator" project="Hospital" file="/Hospital/src/core/IDGenerator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="187" x="599" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="core.Variables.L5" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="202" x="3807" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="core.Variables.L4" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="202" x="4049" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="core.Variables.L3" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="202" x="4291" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="15" language="java" name="core.Observer" project="Hospital" file="/Hospital/src/core/Observer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="927" y="1974"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" language="java" name="core.Variables.BloodTest" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="202" x="4533" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="core.PatientPriorityStrategy" project="Hospital" 
+    file="/Hospital/src/core/PatientPriorityStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="245" x="836" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" language="java" name="core.Variables.Nurse" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="131" x="4775" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="core.KPI" project="Hospital" file="/Hospital/src/core/KPI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="97" x="2031" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="core.Simulator" project="Hospital" file="/Hospital/src/core/Simulator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-457" y="1779"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="core.Variables" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4823" y="85"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="core.Variables.MRIRoom" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="131" x="4946" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="core.WaitTimePriority" project="Hospital" 
+    file="/Hospital/src/core/WaitTimePriority.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-247" y="1716"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="core.Variables.Registration" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="202" x="5117" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="core.ProbabilityDistribution" project="Hospital" 
+    file="/Hospital/src/core/ProbabilityDistribution.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="173" width="189" x="1121" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="core.Variables.XRayScanner" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="131" x="5359" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="27" language="java" name="core.PatientComparator" project="Hospital" 
+    file="/Hospital/src/core/PatientComparator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-259" y="1965"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="28" language="java" name="core.Variables.Arrival" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="113" x="5530" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="core.Variables.MRI" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="202" x="5683" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="core.L1" project="Hospital" file="/Hospital/src/core/L1.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-43" y="1725"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="core.Variables.BoxRoom" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="131" x="5925" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="core.L4" project="Hospital" file="/Hospital/src/core/L4.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="149" y="1725"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="core.L5" project="Hospital" file="/Hospital/src/core/L5.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="341" y="1725"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="34" language="java" name="core.SeverityLevel" project="Hospital" 
+    file="/Hospital/src/core/SeverityLevel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="341" y="1974"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="35" language="java" name="core.L2" project="Hospital" file="/Hospital/src/core/L2.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="533" y="1725"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="core.L3" project="Hospital" file="/Hospital/src/core/L3.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="725" y="1725"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="core.Variables.Stretcher" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="137" width="131" x="6096" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="core.Variables.BloodTestLaboratory" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="165" x="6267" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="core.Variables.ShockRoom" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="131" x="6472" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="core.EventFactory" project="Hospital" file="/Hospital/src/core/EventFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="205" x="1350" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="core.Variables.RadiographyRoom" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="150" x="6643" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="core.Initialization" project="Hospital" 
+    file="/Hospital/src/core/Initialization.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="157" x="1595" y="156"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="core.Variables.XRay" project="Hospital" file="/Hospital/src/core/Variables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="353" width="202" x="6833" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="core.DTDT" project="Hospital" file="/Hospital/src/core/DTDT.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="142" x="2031" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="45" language="java" name="core.Observable" project="Hospital" file="/Hospital/src/core/Observable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1929" y="771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="46" language="java" name="core.RegistrationDesk" project="Hospital" 
+    file="/Hospital/src/core/RegistrationDesk.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="959" y="1761"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="core.Variables.Physician" project="Hospital" 
+    file="/Hospital/src/core/Variables.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-440" y="2001"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="events.BloodTest" project="Hospital" file="/Hospital/src/events/BloodTest.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2300" y="1988"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="events.EventQueue.EventComparator" project="Hospital" 
+    file="/Hospital/src/events/EventQueue.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1270" y="927"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="events.MRI" project="Hospital" file="/Hospital/src/events/MRI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2579" y="1988"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="events.Event" project="Hospital" file="/Hospital/src/events/Event.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2579" y="1154"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="52" language="java" name="events.TransportationToExamination" project="Hospital" 
+    file="/Hospital/src/events/TransportationToExamination.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1463" y="1757"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="events.XRay" project="Hospital" file="/Hospital/src/events/XRay.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2858" y="1988"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="54" language="java" name="events.TransportationToConsultation" project="Hospital" 
+    file="/Hospital/src/events/TransportationToConsultation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1742" y="1766"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="55" language="java" name="events.Registration" project="Hospital" 
+    file="/Hospital/src/events/Registration.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2021" y="1739"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="events.Consultation" project="Hospital" 
+    file="/Hospital/src/events/Consultation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2300" y="1757"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="events.Outcome" project="Hospital" file="/Hospital/src/events/Outcome.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2106" y="1482"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="events.Examination" project="Hospital" 
+    file="/Hospital/src/events/Examination.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2625" y="1730"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="events.EventAvailability" project="Hospital" 
+    file="/Hospital/src/events/EventAvailability.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="851" y="704"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="events.EventQueue" project="Hospital" file="/Hospital/src/events/EventQueue.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1331" y="740"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="events.Arrival" project="Hospital" file="/Hospital/src/events/Arrival.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2265" y="1482"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="person.Transporter" project="Hospital" 
+    file="/Hospital/src/person/Transporter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2665" y="1813"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="person.Physician" project="Hospital" file="/Hospital/src/person/Physician.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2923" y="1822"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="person.Nurse" project="Hospital" file="/Hospital/src/person/Nurse.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3167" y="1813"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="person.Person" project="Hospital" file="/Hospital/src/person/Person.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2624" y="2461"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="66" language="java" name="person.HumanResource" project="Hospital" 
+    file="/Hospital/src/person/HumanResource.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1864" y="2165"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="67" language="java" name="person.Patient" project="Hospital" file="/Hospital/src/person/Patient.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1652" y="1128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="68" language="java" name="ressources.Wheelchair" project="Hospital" 
+    file="/Hospital/src/ressources/Wheelchair.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="621" y="2522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="69" language="java" name="ressources.Stretcher" project="Hospital" 
+    file="/Hospital/src/ressources/Stretcher.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="870" y="2522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="ressources.NonHumanResource" project="Hospital" 
+    file="/Hospital/src/ressources/NonHumanResource.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="770" y="2240"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="ressources.XRayScanner" project="Hospital" 
+    file="/Hospital/src/ressources/XRayScanner.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1119" y="2540"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="ressources.Equipment" project="Hospital" 
+    file="/Hospital/src/ressources/Equipment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="814" y="2381"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="73" language="java" name="ressources.Resource" project="Hospital" 
+    file="/Hospital/src/ressources/Resource.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="669" y="2363"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="74" language="java" name="room.ShockRoom" project="Hospital" file="/Hospital/src/room/ShockRoom.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-515" y="1226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="75" language="java" name="room.BloodTestLaboratory" project="Hospital" 
+    file="/Hospital/src/room/BloodTestLaboratory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-225" y="1235"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="76" language="java" name="room.BoxRoom" project="Hospital" file="/Hospital/src/room/BoxRoom.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="58" y="1226"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="77" language="java" name="room.RadiographyRoom" project="Hospital" 
+    file="/Hospital/src/room/RadiographyRoom.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="337" y="1235"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="78" language="java" name="room.WaitingRoom" project="Hospital" file="/Hospital/src/room/WaitingRoom.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="599" y="1217"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="79" language="java" name="room.MRIRoom" project="Hospital" file="/Hospital/src/room/MRIRoom.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="839" y="1235"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="80" language="java" name="room.Room" project="Hospital" file="/Hospital/src/room/Room.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="174" y="977"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="81">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="41"/>  
+  </nesting>  
+  <association id="82">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="83" name="location"/>      
+      <multiplicity id="84" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="85">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <association id="86">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="87" name="waitingPatients"/>      
+      <multiplicity id="88" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="89">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="90" name="equipment"/>      
+      <multiplicity id="91" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="92">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="93" name="history"/>      
+      <multiplicity id="94" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="95">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="96" name="room"/>      
+      <multiplicity id="97" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="98">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="18"/>  
+  </nesting>  
+  <generalization id="99">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="58"/>  
+  </generalization>  
+  <association id="100">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="101" name="room"/>      
+      <multiplicity id="102" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="103">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="104" name="room"/>      
+      <multiplicity id="105" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="106">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="39"/>  
+  </nesting>  
+  <nesting id="107">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <generalization id="108">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="80"/>  
+  </generalization>  
+  <association id="109">    
+    <end type="SOURCE" refId="60" navigable="false">      
+      <attribute id="110" name="comparator"/>      
+      <multiplicity id="111" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="49" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="112">    
+    <end type="SOURCE" refId="63" navigable="false">      
+      <attribute id="113" name="availablePhysicians"/>      
+      <multiplicity id="114" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="115">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <generalization id="116">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <association id="117">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="118" name="waitingPatients"/>      
+      <multiplicity id="119" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="120">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="121" name="nurse"/>      
+      <multiplicity id="122" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="123">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="66"/>  
+  </realization>  
+  <realization id="124">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="125">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="45"/>  
+  </realization>  
+  <generalization id="126">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <association id="127">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="128" name="c"/>      
+      <multiplicity id="129" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="130">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <nesting id="131">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <generalization id="132">    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="80"/>  
+  </generalization>  
+  <association id="133">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="134" name="startRoom"/>      
+      <multiplicity id="135" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="136">    
+    <end type="SOURCE" refId="65" navigable="false">      
+      <attribute id="137" name="history"/>      
+      <multiplicity id="138" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="139">    
+    <end type="SOURCE" refId="62" navigable="false">      
+      <attribute id="140" name="availableTransporters"/>      
+      <multiplicity id="141" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="62" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="142">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="66"/>  
+  </realization>  
+  <association id="143">    
+    <end type="SOURCE" refId="74" navigable="false">      
+      <attribute id="144" name="availableShockRooms"/>      
+      <multiplicity id="145" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="74" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="146">    
+    <end type="SOURCE" refId="80"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <realization id="147">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <association id="148">    
+    <end type="SOURCE" refId="65" navigable="false">      
+      <attribute id="149" name="existingPeople"/>      
+      <multiplicity id="150" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="65" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="151">    
+    <end type="SOURCE" refId="80" navigable="false">      
+      <attribute id="152" name="occupants"/>      
+      <multiplicity id="153" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="154">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="22"/>  
+  </nesting>  
+  <generalization id="155">    
+    <end type="SOURCE" refId="78"/>    
+    <end type="TARGET" refId="80"/>  
+  </generalization>  
+  <association id="156">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="157" name="nurse"/>      
+      <multiplicity id="158" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="159">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="160" name="patient"/>      
+      <multiplicity id="161" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="162">    
+    <end type="SOURCE" refId="79"/>    
+    <end type="TARGET" refId="80"/>  
+  </generalization>  
+  <association id="163">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="164" name="queue"/>      
+      <multiplicity id="165" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="166">    
+    <end type="SOURCE" refId="78" navigable="false">      
+      <attribute id="167" name="instance"/>      
+      <multiplicity id="168" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="78" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="169">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="170" name="waitingPatients"/>      
+      <multiplicity id="171" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="172">    
+    <end type="SOURCE" refId="66"/>    
+    <end type="TARGET" refId="73"/>  
+  </generalization>  
+  <association id="173">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="174" name="waitingPatients"/>      
+      <multiplicity id="175" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="176">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="66"/>  
+  </realization>  
+  <nesting id="177">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="26"/>  
+  </nesting>  
+  <nesting id="178">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="29"/>  
+  </nesting>  
+  <association id="179">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="180" name="observerList"/>      
+      <multiplicity id="181" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="182">    
+    <end type="SOURCE" refId="75"/>    
+    <end type="TARGET" refId="80"/>  
+  </generalization>  
+  <association id="183">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="184" name="scanner"/>      
+      <multiplicity id="185" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="186">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="187" name="insurance"/>      
+      <multiplicity id="188" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="189">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <nesting id="190">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="43"/>  
+  </nesting>  
+  <realization id="191">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="27"/>  
+  </realization>  
+  <generalization id="192">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <nesting id="193">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <nesting id="194">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="31"/>  
+  </nesting>  
+  <generalization id="195">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <realization id="196">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="197">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <association id="198">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="199" name="enabledEvents"/>      
+      <multiplicity id="200" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="201">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="202" name="transporter"/>      
+      <multiplicity id="203" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="62" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="204">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="205" name="patient"/>      
+      <multiplicity id="206" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="207">    
+    <end type="SOURCE" refId="60" navigable="false">      
+      <attribute id="208" name="instance"/>      
+      <multiplicity id="209" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="210">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="211" name="endRoom"/>      
+      <multiplicity id="212" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="213">    
+    <end type="SOURCE" refId="77" navigable="false">      
+      <attribute id="214" name="availableRadiographyRooms"/>      
+      <multiplicity id="215" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="77" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="216">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="217" name="equipment"/>      
+      <multiplicity id="218" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="219">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="58"/>  
+  </generalization>  
+  <generalization id="220">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <association id="221">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="222" name="eventQueue"/>      
+      <multiplicity id="223" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="224">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="225" name="physician"/>      
+      <multiplicity id="226" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="227">    
+    <end type="SOURCE" refId="68" navigable="false">      
+      <attribute id="228" name="queue"/>      
+      <multiplicity id="229" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="230">    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="72"/>  
+  </generalization>  
+  <nesting id="231">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <nesting id="232">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <association id="233">    
+    <end type="SOURCE" refId="71" navigable="false">      
+      <attribute id="234" name="queue"/>      
+      <multiplicity id="235" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="236">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="237" name="room"/>      
+      <multiplicity id="238" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="239">    
+    <end type="SOURCE" refId="80"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <generalization id="240">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <association id="241">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="242" name="physician"/>      
+      <multiplicity id="243" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="244">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <association id="245">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="246" name="waitingPatients"/>      
+      <multiplicity id="247" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="248">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="58"/>  
+  </generalization>  
+  <association id="249">    
+    <end type="SOURCE" refId="64" navigable="false">      
+      <attribute id="250" name="availableNurses"/>      
+      <multiplicity id="251" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="252">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="253" name="instance"/>      
+      <multiplicity id="254" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="255">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <association id="256">    
+    <end type="SOURCE" refId="79" navigable="false">      
+      <attribute id="257" name="availableMRIRooms"/>      
+      <multiplicity id="258" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="79" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="259">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="260" name="waitingPatients"/>      
+      <multiplicity id="261" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="262">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <nesting id="263">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="47"/>  
+  </nesting>  
+  <generalization id="264">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="72"/>  
+  </generalization>  
+  <generalization id="265">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <association id="266">    
+    <end type="SOURCE" refId="76" navigable="false">      
+      <attribute id="267" name="availableBoxRooms"/>      
+      <multiplicity id="268" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="76" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="269">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <association id="270">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="271" name="waitingPatients"/>      
+      <multiplicity id="272" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="273">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <association id="274">    
+    <end type="SOURCE" refId="60" navigable="false">      
+      <attribute id="275" name="eventQueue"/>      
+      <multiplicity id="276" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="277">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="278" name="physician"/>      
+      <multiplicity id="279" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="280">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <nesting id="281">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <nesting id="282">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="14"/>  
+  </nesting>  
+  <nesting id="283">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="9"/>  
+  </nesting>  
+  <association id="284">    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="285" name="room"/>      
+      <multiplicity id="286" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="287">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="288" name="comparator"/>      
+      <multiplicity id="289" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="290">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <association id="291">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="292" name="endRoom"/>      
+      <multiplicity id="293" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="294">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="295">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="72"/>  
+  </generalization>  
+  <nesting id="296">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="37"/>  
+  </nesting>  
+  <association id="297">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="298" name="endRoom"/>      
+      <multiplicity id="299" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="300">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="38"/>  
+  </nesting>  
+  <association id="301">    
+    <end type="SOURCE" refId="54" navigable="false">      
+      <attribute id="302" name="startRoom"/>      
+      <multiplicity id="303" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="304">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="73"/>  
+  </realization>  
+  <association id="305">    
+    <end type="SOURCE" refId="75" navigable="false">      
+      <attribute id="306" name="availableBloodTestLaboratories"/>      
+      <multiplicity id="307" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="75" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="308">    
+    <end type="SOURCE" refId="67" navigable="false">      
+      <attribute id="309" name="severityLevel"/>      
+      <multiplicity id="310" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="311">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="65"/>  
+  </generalization>  
+  <generalization id="312">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="51"/>  
+  </generalization>  
+  <nesting id="313">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <generalization id="314">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="80"/>  
+  </generalization>  
+  <association id="315">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="316" name="nurse"/>      
+      <multiplicity id="317" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="318">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="319" name="instance"/>      
+      <multiplicity id="320" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="321">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="49"/>  
+  </nesting>  
+  <association id="322">    
+    <end type="SOURCE" refId="78" navigable="false">      
+      <attribute id="323" name="waitingPatients"/>      
+      <multiplicity id="324" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="325">    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="326" name="waitingPatients"/>      
+      <multiplicity id="327" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

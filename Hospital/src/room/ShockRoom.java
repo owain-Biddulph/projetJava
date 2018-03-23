@@ -2,11 +2,12 @@ package room;
 
 import java.util.ArrayList;
 
+import core.Variables;
 import events.Event;
 
 public class ShockRoom extends Room{
 	private static ArrayList<ShockRoom> availableShockRooms = new ArrayList<ShockRoom>();
-	public ArrayList<ShockRoom> getQueue(){
+	public static ArrayList<ShockRoom> getQueue(){
 		return(availableShockRooms);
 	}
 
@@ -14,6 +15,10 @@ public class ShockRoom extends Room{
 		ShockRoom room = availableShockRooms.remove(0);
 		if(room.getOccupants().size() < room.getSize() -1) {availableShockRooms.add(room);}
 		return room;
+	}
+	
+	public ShockRoom() {
+		this.size = Variables.ShockRoom.getSize();
 	}
 
 	@Override

@@ -7,6 +7,7 @@ import core.Observer;
 import events.Event;
 
 public abstract class Person implements Observer {
+	private static List<Person> existingPeople = new ArrayList<Person>();
 	protected String name;
 	protected String surname;
 	protected int ID;
@@ -21,6 +22,11 @@ public abstract class Person implements Observer {
 		//this.history = emptylist;
 	}*/
 	
+	public static List<Person> getExistingPeople() {
+		return Person.existingPeople;
+	}
+	
+	public void getState() {}
 	@Override
 	public abstract void update(Event event, boolean start);
 }

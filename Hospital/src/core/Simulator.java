@@ -7,7 +7,9 @@ import events.Arrival;
 import events.Event;
 import events.EventAvailability;
 import events.EventQueue;
+import person.Nurse;
 import person.Patient;
+import person.Person;
 import room.BloodTestLaboratory;
 
 public class Simulator {
@@ -26,12 +28,7 @@ public class Simulator {
 		eventQueue.add(new Arrival(new Patient(new L3())));
 		eventQueue.add(new Arrival(new Patient(new L4())));
 		eventQueue.add(new Arrival(new Patient(new L5())));
-		for 
-		for(int i = 0; i<= Variables.BloodTestLaboratory.getNumber(); i++) {
-			BloodTestLaboratory.getQueue.add(new BloodTestLaboratory();
-		}
-		
-		
+		Initialization.createRessources(); 
 	}
 	public static void takeStep() {
 		Event e = eventQueue.deQueue();
@@ -45,12 +42,19 @@ public class Simulator {
 			String priorityEvent = priorityPatient.getNextEvent();
 			//if this event is possible (if the resources are there)
 			//then we create it and add it to the eventQueue
-			if(EventAvailability.isPossible(priorityEvent)) {
+			if(EventAvailability.isPossible(priorityEvent, priorityPatient)) {
 				Event nextEvent = EventFactory.createEvent(priorityEvent, priorityPatient);
 				nextEvent.startEvent();
 				eventQueue.add(nextEvent);
 			}
 		}
+	}
+	
+	public void printState() {
+		for(Person person : Person.getExistingPeople()) {
+			person.getState();
+		}
+		Patient.getWaitingPatientsState();
 	}
 	public static void main(String[] args) {
 		initialize();

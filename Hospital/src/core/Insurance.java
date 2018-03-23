@@ -3,6 +3,10 @@ package core;
 public class Insurance {
 	private String type;
 	
+	@Override
+	public String toString() {
+		return "Insurance [type=" + type + "]";
+	}
 	public int discount() {
 		if (this.type.equals("no insurance")){return(0);}
 		if (this.type.equals("silver")) {return(50);}

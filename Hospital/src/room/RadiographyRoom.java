@@ -1,6 +1,7 @@
 package room;
 import java.util.*;
 
+import core.Variables;
 import events.Event;
 import ressources.XRayScanner;
 
@@ -8,7 +9,7 @@ public class RadiographyRoom extends Room {
 	private XRayScanner scanner;
 	private static ArrayList<RadiographyRoom> availableRadiographyRooms = new ArrayList<RadiographyRoom>();
 	
-	public ArrayList<RadiographyRoom> getQueue(){
+	public static ArrayList<RadiographyRoom> getQueue(){
 		return(availableRadiographyRooms);
 	}
 
@@ -25,6 +26,7 @@ public class RadiographyRoom extends Room {
 	
 	public RadiographyRoom () {
 		this.scanner = new XRayScanner();
+		this.size = Variables.RadiographyRoom.getSize();
 	}
 	@Override
 	public void update(Event event, boolean start) {

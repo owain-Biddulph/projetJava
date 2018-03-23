@@ -1,24 +1,37 @@
 package events;
+import core.*;
 
 import person.Nurse;
+import person.Patient;
 import person.Physician;
 import person.Transporter;
 import room.BloodTestLaboratory;
+import room.BoxRoom;
 import room.MRIRoom;
 import room.RadiographyRoom;
+import room.ShockRoom;
 
 public class EventAvailability {
 	
-	// TODO populate 
 	
-	public static boolean isPossible(String s) {
+	public static boolean isPossible(String s, Patient p) {
 		if(s.equals("Registration")) {
 			return(Nurse.available());
 		}
 		
 		if(s.equals("TransportationToConsultation")) {
-			return(Transporter.available());
+			boolean roomIsFree = false;
+			if (p.getSeverityLevel() instanceof L1 || p.getSeverityLevel() instanceof L2) {
+				roomIsFree = !ShockRoom.getQueue().isEmpty();
+			}
+			else {
+				roomIsFree = !BoxRoom.getQueue().isEmpty();
+			}
+			//we add the physician's availibility because it would be weird to 
+			//transport a patient to a room and have them wait there
+			return(Transporter.available() && roomIsFree && Physician.available());
 		}
+		
 		if(s.equals("Consultation")) {
 			return(Physician.available());
 		}

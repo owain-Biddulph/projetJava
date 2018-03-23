@@ -4,9 +4,15 @@ import java.util.ArrayList;
 
 import core.IDGenerator;
 import events.Event;
+import room.ShockRoom;
 
 public class Transporter extends Person implements HumanResource {
 	private static ArrayList<Transporter> availableTransporters = new ArrayList<Transporter>();
+	
+	
+	public static ArrayList<Transporter> getQueue(){
+		return(availableTransporters);
+	}
 	
 	public Transporter (String name, String surname) {
 		super();

@@ -8,7 +8,7 @@ import core.PatientComparator;
 import core.SeverityLevel;
 import core.Simulator;
 import core.addToQueues;
-import events.Event;
+import events.*;
 import room.Room;
 import room.WaitingRoom;
 
@@ -37,6 +37,7 @@ public class Patient extends Person {
 		this.ID = IDGenerator.getIDGenerator().nextID();
 		this.exitTime = Simulator.globalClock;
 		this.arrivalTime = Simulator.globalClock;
+		Person.getExistingPeople().add(this);
 	}
 	
 	public Patient(SeverityLevel severity) {
@@ -48,6 +49,7 @@ public class Patient extends Person {
 		this.surname = "Surname";
 		this.exitTime = Simulator.globalClock;
 		this.arrivalTime = Simulator.globalClock;
+		Person.getExistingPeople().add(this);
 	}
 	
 	
@@ -75,6 +77,18 @@ public class Patient extends Person {
 	
 	public static void setPriorityStrategy(PatientComparator c) {
 		comparator = c;
+	}
+	@Override
+	public void getState() {
+		System.out.println("The Patients state is :");
+		System.out.println("Name : " + this.name);
+		System.out.println("Surname : " + this.surname);
+		System.out.println("ID : " + this.ID);
+		System.out.println("Location : " + this.getLocation());
+		System.out.println("Next Step : " + this.getNextEvent());
+		System.out.println("Severity Level : " + this.getSeverityLevel());
+		System.out.println("Insurance : " + this.insurance);
+		
 	}
 	
 	// Getters and Setters
@@ -125,6 +139,50 @@ public class Patient extends Person {
 
 	public static PriorityQueue<Patient> getWaitingPatients() {
 		return waitingPatients;
+	}
+
+	public static void getWaitingPatientsState() {
+		System.out.println("Patients waiting for MRI : ");
+		for(Patient patient : MRI.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");
+		
+		System.out.println("Patients waiting for blood test : ");
+		for(Patient patient : BloodTest.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");
+		
+		System.out.println("Patients waiting for XRay : ");
+		for(Patient patient : XRay.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");
+		
+		System.out.println("Patients waiting for Transportation to Consultation : ");
+		for(Patient patient : TransportationToConsultation.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");
+		
+		System.out.println("Patients waiting for Transportation to Examination : ");
+		for(Patient patient : TransportationToExamination.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");
+		
+		System.out.println("Patients waiting for Registration : ");
+		for(Patient patient : Registration.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");
+		
+		System.out.println("Patients waiting for Consultation : ");
+		for(Patient patient : Consultation.getQueue()) {
+			patient.getState();
+		}
+		System.out.println("");	
 	}
 
 }

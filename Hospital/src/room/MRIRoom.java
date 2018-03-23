@@ -2,12 +2,13 @@ package room;
 
 import java.util.ArrayList;
 
+import core.Variables;
 import events.Event;
 
 public class MRIRoom extends Room {
 	private static ArrayList<MRIRoom> availableMRIRooms = new ArrayList<MRIRoom>();
 	
-	public ArrayList<MRIRoom> getQueue(){
+	public static ArrayList<MRIRoom> getQueue(){
 		return(availableMRIRooms);
 	}
 
@@ -22,8 +23,8 @@ public class MRIRoom extends Room {
 		return(! availableMRIRooms.isEmpty());
 	}
 	
-	public MRIRoom () {
-		
+	public MRIRoom() {
+		this.size = Variables.MRIRoom.getSize();
 	}
 	
 	@Override
